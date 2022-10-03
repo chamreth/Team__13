@@ -1,0 +1,19 @@
+@import "../mixins/mixin";
+@import "../global/variable";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    .image{
+        background-image: url(../../images/images-up.png);
+        @include bg-img;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+
+    }
+
+}

@@ -1,0 +1,44 @@
+@import "../mixins/mixin";
+@import "../global/variable";
+@import "../global/layout";
+
+.footer{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin:20px;
+    background:$mygraycolor;
+    .text{
+        text-align: center;
+    }
+    h3{
+        color:$mymaincolor;
+        margin:10px;
+    }
+    p{
+        margin: 10px;
+    }
+}
+.contan{
+    display: flex;
+    flex-direction: row;
+    
+}
+.logo{
+    margin-left: 40px;
+    display: flex;
+}
+.project{
+    margin-top: 10px;
+   margin-left: 70%;
+}
+.logo h4{
+    margin-top:$myMargin;
+    margin-left:$myMargin;
+    width: 150%;
+}
+@media(max-width:$mysmall){
+    .footer{
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,10 @@
+@import "global/nav";
+@import "global/variable";
+@import "global/footer";
+@import "global/layout";
+@import "mixins/mixin";
+@import "conponent-contact/section1";
+@import "conponent-contact/section2";
+.nav-left li:nth-child(2){
+    background:$mythirdcolor;
+}

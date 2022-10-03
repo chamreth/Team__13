@@ -1,0 +1,81 @@
+@import "../mixins/mixin";
+@import "../global/variable";
+.section2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    .left{
+        flex-basis: 30%;
+        background:white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;        
+        padding: 20px;
+        .input{
+            margin-top:$myMargin;
+            input{
+                margin-top: 10px;
+                padding:$myPadding;
+                width: 100%;
+                box-sizing: border-box;
+                border-radius: 5px;
+            }
+        }
+        button{
+            padding: 10px;
+            border: none;
+            color: white;
+            background-color:$mytwocolor;
+            border-radius: 5px;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: #000;
+        }
+        .choose{
+            @include flex-items (none);
+            margin-top: 10px;
+            gap: 10px;
+            color: blue;
+        }
+    }
+    .right{
+        .infor{
+            background:$mymaincolor;
+            color: white;
+            padding:$myPadding;
+            padding-top: 30px;
+            .text{
+                @include flex-items (none);
+                padding-bottom: 30px;
+            }
+            .text:hover{
+                color:$mythirdcolor;
+            }
+        }
+    }
+} 
+@media(max-width:$mymedium){
+    .section2{
+        width:100%;
+        padding: 10px;
+        .left{
+            flex-basis: 50%;
+        }
+        .right{
+            width: 40%;
+        }
+    }
+}
+@media(max-width:$mysmall){
+    .section2{
+        width:100%;
+        padding: 10px;
+        .left{
+            flex-basis: 40%;
+        }
+        .right{
+            width: 40%;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import "../mixins/mixin";
+@import "../global/variable";
+.section1{
+    margin-top: -80px;
+    @include flex-items(center);
+    gap: 30px;
+    .choose{
+        background:rgba(7, 177, 7, 0.637);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        color: white;
+        flex-basis: 35%;
+    }
+    .choose:hover{
+        background:black;
+    }
+}
+@media(max-width:$mymedium){
+    .section1{
+        display: flex;
+        flex-direction: column;
+        margin-top:-150px;
+        h1{
+            font-size: 20px;
+        }
+
+    }
+}
+

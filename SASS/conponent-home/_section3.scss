@@ -1,0 +1,100 @@
+@import "../mixins/mixin";
+@import "../global/variable";
+.section3{
+    background-image: url(../images/sect.png);
+    @include bg-img;
+    @include flex-items(space-between);
+    margin-top:$myMargin;
+    padding: 10px 30px 10px 0;
+    .left{
+        background:$mythirdcolor;
+        padding: 80px;
+        border-radius: 0 150px 150px 0;
+        i{
+            font-size: 15px;
+            color:white;
+            margin-top: 20px;
+        }
+    }
+    .right{
+        button{
+            margin-top: 10px;
+            @include flex-items(center);
+            gap: 10px;
+            background:$mythirdcolor;
+            padding: 8px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+    
+        }
+        button:hover{
+            cursor: pointer;
+            background:$mytwocolor;
+        }
+        h1{
+            color: white;
+            font-size: 50px;
+        }
+
+        p{
+            color: white;
+            margin-top: 10px;
+        }
+    }
+
+}
+@media(max-width:$mymedium){
+    .section3{
+        .left{
+            padding: 20px;
+            h3{
+                font-size: 13px;
+            }
+            i{
+                font-size:10px;
+            }
+        }
+        .right{
+            margin-left: 20px;
+            h1{
+                font-size: 25px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+@media(max-width:$mysmall){
+    .section3{
+        .left{
+            padding: 10px;
+            padding-right: 10px;
+            h3{
+                font-size: 12px;
+            }
+            i{
+                font-size:8px;
+                margin-top: 10px;
+            }
+        }
+        .right{
+            margin-left: 20px;
+            h1{
+                font-size: 15px;
+                color:$mymaincolor;
+                border-bottom: 1px solid $mygraycolor;
+            }
+            p{
+                font-size: 10px;
+            }
+            button{
+                padding: 5px;
+                gap: 5px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,49 @@
+@import "../mixins/mixin";
+@import "../global/variable";
+
+.card-items{
+    display: flex;
+    gap: 10px;
+    .card{
+        border: 2px solid $mythirdcolor;
+        @include flex-items(center);
+        width: 150px;
+        padding: 5px;
+        img{
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .size img{
+        width: 35px;
+        height: 35px;
+        
+    }
+    .card:hover{
+        background:$mythirdcolor;
+    }
+}
+@media(max-width:$mymedium){
+    .card-items{
+        flex-wrap: wrap;
+        justify-content: center;
+        .card{
+            p{
+                font-size: 12px;
+            }
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .size img{
+            width: 19px;
+            height: 20px;
+            margin-right: 5px;
+        }
+    
+    }
+}
+@media(max-width:$mysmall){
+}
+

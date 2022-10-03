@@ -1,0 +1,30 @@
+@import "../mixins/mixin";
+@import "../global/variable";
+@import "../global/layout";
+.nav{
+    background-image: url(../images/bg.jpg);
+    @include bg-img;
+    @include flex-items(space-between);
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    color: white;
+    .nav-left{
+        @include flex-items(none);
+        font-size: 20px;  
+        width: 50;
+        margin-left: 4%;
+        span{
+            color:$mytwocolor;
+            margin-left: 5px;
+        }
+        
+    }
+}
+@media(max-width:$mysmall){
+    h1{
+        font-size:20px;
+        padding: 20px;
+    }
+}
+

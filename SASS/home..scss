@@ -1,0 +1,63 @@
+@import "global/nav";
+@import "global/layout";
+@import "global/footer";
+@import "global/variable";
+@import "conponent-home/card";
+@import "conponent-home/section";
+@import "conponent-home/section1";
+@import "conponent-home/section2";
+@import "conponent-home/section3";
+@import "conponent-home/section4";
+@import "mixins/mixin";
+.container-job{
+    margin-top: $myMargin;
+    @include flex-items(center);
+    gap: 10px;
+    select{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding:$myPadding;
+        border: 2px solid $mytwocolor;
+    }
+    select:hover{
+        background:$mythirdcolor;
+    }
+
+}
+@media(max-width:$mymedium){
+    .container-job{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .list-job{
+        text-align: center;
+    }
+}
+
+.nav-left li:nth-child(1){
+        background:$mythirdcolor;
+    }
+.list-job{
+    margin-top:$myMargin;
+    padding-left:$myPadding;
+    color:$mythirdcolor;
+
+}
+.add-more{
+    @include flex-items(center);
+    button{
+        padding: 10px;
+        border: 1px solid $mythirdcolor;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        background:$mytwocolor;
+    }
+    i{
+        color:$mythirdcolor;
+        font-size: 50px;
+    }
+    button:nth-child(1){
+        background:$mytwocolor;
+    }
+}

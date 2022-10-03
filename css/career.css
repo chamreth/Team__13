@@ -1,0 +1,196 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.contaner {
+  display: flex;
+  flex-direction: row;
+  grid-area: 10%;
+}
+.contaner h4 {
+  margin: 20px 0;
+  color: rgb(30, 165, 25);
+}
+.contaner .navbar-left {
+  width: 55%;
+  background: rgb(202, 214, 202);
+  border-radius: 20px;
+  margin: auto;
+  margin-left: 5%;
+  margin-top: 30px;
+  padding: 30px;
+}
+.contaner .navbar-left .text-pic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 0.1%;
+  border-bottom: 1px solid orange;
+}
+.contaner .navbar-left .text-pic .time {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+.contaner .navbar-left .text-pic .time .time img {
+  margin-right: 20px;
+}
+.contaner .navbar-right {
+  background: rgb(202, 214, 202);
+  border-radius: 10px;
+  width: 30%;
+  height: 70vh;
+  margin: 5%;
+  margin-top: 30px;
+}
+.contaner .navbar-right input {
+  padding: 15px;
+  width: 80%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.contaner .navbar-right button {
+  display: flex;
+  background: orange;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10%;
+  margin-left: 70%;
+}
+.contaner .navbar-right button:hover {
+  color: rgb(30, 165, 25);
+}
+.contaner .navbar-right .search {
+  display: flex;
+  align-items: center;
+}
+.contaner .navbar-right i {
+  margin-left: -40px;
+  margin-top: 30px;
+}
+.contaner .navbar-right li {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+@media (max-width: 450px) {
+  .contaner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .contaner .navbar-left {
+    width: 75%;
+  }
+  .contaner .navbar-right {
+    width: 90%;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+  background: rgb(202, 214, 202);
+}
+.footer .text {
+  text-align: center;
+}
+.footer h3 {
+  color: rgb(30, 165, 25);
+  margin: 10px;
+}
+.footer p {
+  margin: 10px;
+}
+
+.contan {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  margin-left: 40px;
+  display: flex;
+}
+
+.project {
+  margin-top: 10px;
+  margin-left: 70%;
+}
+
+.logo h4 {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 150%;
+}
+
+@media (max-width: 450px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.nav {
+  background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+  color: white;
+}
+.nav .nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  font-size: 20px;
+  width: 50;
+  margin-left: 4%;
+}
+.nav .nav-left span {
+  color: green;
+  margin-left: 5px;
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 20px;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=career.css.map */

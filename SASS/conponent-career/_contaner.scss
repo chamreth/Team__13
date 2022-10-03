@@ -1,0 +1,91 @@
+@import "../mixins/mixin";
+@import "../global/variable";
+@import "../global/layout";
+
+.contaner{
+    display: flex;
+    flex-direction:row;
+    grid-area: 10%;
+    h4{
+        margin: 20px 0;
+        color:$mymaincolor;
+    }
+    .navbar-left{
+        width: 55%;
+        background:$mygraycolor;    
+        border-radius: 20px;
+        margin: auto;
+        margin-left: 5%;
+        margin-top:$myMargin;
+        padding: 30px;
+        .text-pic{
+            @include flex-items(space-between);
+            flex-direction:row;
+            margin-top: 0.1%;
+            border-bottom: 1px solid $mythirdcolor;
+            .time{
+                @include flex-items(none);
+                margin-top:$myMargin;
+                margin-bottom: 20px;
+                gap: 5px;
+                .time img{
+                    margin-right:20px;
+                }
+            }
+        }
+    }
+    .navbar-right{
+       background: $mygraycolor;  
+       border-radius: 10px; 
+       width: 30%;
+       height: 70vh;
+       margin: 5% ;
+       margin-top:$myMargin;
+       input{
+        padding: 15px;
+        width: 80%;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-left:$myMargin;
+        margin-top:$myMargin;
+    }
+       button{
+        display: flex;
+        background:$mythirdcolor;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10%;
+        margin-left: 70%;
+    }
+        button:hover{
+        color:$mymaincolor;
+    }
+    
+       .search{
+        display: flex;
+        align-items: center;
+    }
+        i{
+        margin-left: -40px;
+        margin-top: 30px;
+    }
+        li{
+        margin-top:$myMargin;
+        margin-left:$myMargin;
+    }
+    }
+}
+@media(max-width:$mysmall){
+    .contaner{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .navbar-left{
+            width: 75%;
+        }
+    .navbar-right{
+        width: 90%;
+    }
+    }
+}

@@ -1,0 +1,14 @@
+@import "../mixins/mixin";
+.section4{
+    margin-top: 50px;
+    @include flex-items(center);
+    flex-direction: column;
+    h1{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:$mymedium){
+
+
+}
+

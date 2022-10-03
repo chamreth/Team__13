@@ -1,0 +1,15 @@
+@import "../mixins/mixin";
+@import "../global/variable";
+
+body{
+    @include flex-items(center);
+    margin: auto;
+    height: 100vh;
+    padding: 0;
+    width: 50%;
+    font-family: sans-serif;
+    border-radius: 20px;
+    background-image: url(../../images/login1.png);
+}
+@media(max-width:$mysmall){
+}
